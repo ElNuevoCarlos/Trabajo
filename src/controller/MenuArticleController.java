@@ -76,19 +76,12 @@ public class MenuArticleController {
 
     @FXML	
     void showAvailableArticles(ActionEvent event) {
-        System.out.println("Articulos disponibles:");
-        for (Article article : articleManager.getArticles()) {
-            if (article.isDisponible()) {
-                System.out.println(article);
-            }
-        }
+    	Main.loadScene("/view/TableViewArticles.fxml");
     }
-
     @FXML
     void goToMainMenu(ActionEvent event) {
         Main.loadScene("/view/MenuPrincipal.fxml");
     }
-
     private void mostrarAlerta(String titulo, String cabecera, String mensaje) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(titulo);
@@ -96,7 +89,6 @@ public class MenuArticleController {
         alert.setContentText(mensaje);
         alert.showAndWait();
     }
-
     private void limpiarCampos() {
         txtTitle.clear();
         txtAuthor.clear();
