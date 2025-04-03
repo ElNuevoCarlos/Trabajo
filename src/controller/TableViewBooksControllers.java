@@ -28,8 +28,8 @@ public class TableViewBooksControllers {
 		}
 		titulo.setCellValueFactory(new PropertyValueFactory<>("titulo"));
 		autor.setCellValueFactory(new PropertyValueFactory<>("autor"));
-		autor.setCellValueFactory(new PropertyValueFactory<>("ISBN"));
-		autor.setCellValueFactory(new PropertyValueFactory<>("año"));
+		ISBN.setCellValueFactory(new PropertyValueFactory<>("ISBN"));
+		año.setCellValueFactory(new PropertyValueFactory<>("año"));
 		tableBook.setItems(books);
 	}
 
