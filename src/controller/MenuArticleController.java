@@ -80,7 +80,7 @@ public class MenuArticleController {
     }
     @FXML
     void goToMainMenu(ActionEvent event) {
-        Main.loadScene("/view/MenuPrincipal.fxml");
+    	Main.loadScene("/view/MenuOptions.fxml");
     }
     private void mostrarAlerta(String titulo, String cabecera, String mensaje) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);

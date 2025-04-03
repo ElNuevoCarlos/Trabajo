@@ -13,4 +13,8 @@ public class MenuOptionsController {
     void registerBook(ActionEvent event) {
     	Main.loadScene("/view/MenuBook.fxml");
     }
+    @FXML
+    void goToMainMenu(ActionEvent event) {
+    	Main.loadScene("/view/MenuPrincipal.fxml");
+    }
 }
